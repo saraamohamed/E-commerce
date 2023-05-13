@@ -1,0 +1,246 @@
+.background_image {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/home.jpg);
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+}
+.categories-container button {
+  margin: 4rem;
+  min-width: 5rem;
+  min-height: 4rem;
+}
+/* shooping icon */
+.navbar-nav .shopping {
+  position: relative;
+  text-align: right;
+}
+.shopping img {
+  width: 40px;
+}
+header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+/*----SLIDER BUTTONS-----*/
+main {
+  background-image: url(/images/home.jpg);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 500px;
+}
+
+.cta-button {
+  display: block;
+  margin-top: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: lightgray;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+/* slider */
+
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
+}
+
+.next-btn {
+  right: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*----------------card-----------------*/
+.product-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1vw 1vh;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 500px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card > img {
+  padding: 2rem;
+  height: 70%;
+}
+/* ------------------ */
+.cart .card {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  min-height: 100%;
+  background-color: #453e3b;
+  transition: 0.5s;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.active .cart .card {
+  left: calc(100% - 300px);
+}
+.active .container {
+  transform: translateX(-200px);
+}
+.cart .card h1 {
+  color: #e8bc0e;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.cart .card .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart .card .checkOut div {
+  background-color: #e8bc0e;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart .card .checkOut div:nth-child(2) {
+  background-color: #1c1f25;
+  color: #fff;
+}
+
+/* list */
+.listCard li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img {
+  width: 90%;
+  max-height: 50%;
+}
+.listCard li button {
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count {
+  margin: 0 10px;
+}
+.btncontanier {
+  display: flex;
+  justify-content: center;
+}
+.btncontanier button {
+  margin-left: 30%;
+  padding-bottom: 1rem;
+}
